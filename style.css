@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 80vh;
-    font-family:  "Roboto", sans-serif;
+    font-family:   "Poppins", sans-serif;
 }
 form{
     border: 2px solid #a7a2a2;
@@ -99,7 +99,7 @@ left:219px;
 input[type="checkbox"]{
  
     width: 40px;
-    height: 4vh;
+    height: 1.5em;
    
    
 }
