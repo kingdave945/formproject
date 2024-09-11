@@ -7,6 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 80vh;
+    font-family:  "Roboto", sans-serif;
 }
 form{
     border: 2px solid #a7a2a2;
