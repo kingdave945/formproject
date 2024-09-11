@@ -1,63 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="cover">
-        <form>
-            <div>
-            <div class="container">
-                  <h1>
-                    Welcome Back!
-                  </h1>
-                 <p class="contain">
-                    Please sign in to continue
-                  </p>
-            </div>
-             
-           <br>
-
-   </div>
-              
-            <br>
-            <div class="cont">
-                <label for="email" class="email" >Email 
-                    <input type="text" id="email" placeholder="Please enter your email address"> 
-                </label>
-              </div>
-             <br>
-              <div class="cont">
-                <label for="password" class="password">Password
-                    <input type="text"  id="password" placeholder="Please enter your password" maxlength="8">
-                </label>
-            </div>
-            <br>
-          
-            
-            <div>
-                <button>
-                    <a href="#">Continue</a>
-                </button>
-            </div>
-            <div >
-              <label for="checkbox" id="check">
-                Remember Me
-              </label>
-              <input type="checkbox" id="checkbox">
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container flex-col align-center justify-center">
+      <div class="content flex-col align-center">
+        <form action="#" class="form flex-col align-center justify-between">
+          <span class="header">Welcome Back!</span>
+          <span class="subtitle">Please sign in to continue</span>
+          <div class="input-container flex-col">
+            <label for="email" class="label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+              placeholder="Please enter your email address"
+            />
+          </div>
+          <div class="input-container flex-col">
+            <label for="password" class="label">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="input"
+              placeholder="Please enter your email address"
+            />
+          </div>
+          <button class="btn">Continue</button>
+          <div class="flex-row align-center justify-end bottom">
+            <input
+              type="checkbox"
+              name="checkbox"
+              class="checkbox"
+              id="checkbox"
+            />
+            <label for="checkbox" class="checkbox-label">Remember Me</label>
+          </div>
         </form>
-             
-            <div class="sign">
-                <p>
-                    Don't have an account? <a href="#">Sign Up</a>
-                </p>
-            </div>  
-      
+        <div class="flex-row align-center justify-center register-row">
+          <span class="register-label"> Don't have an account? </span>
+          <a href="#" class="register"> Sign Up </a>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

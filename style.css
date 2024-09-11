@@ -1,119 +1,129 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    font-family:  "Roboto", sans-serif;
-}
-form{
-    border: 2px solid #a7a2a2;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 70px;
-    padding-right: 100px;
-    border-radius: 10px;
-    width: 200px;
-}
-.cover{
-   
-    position: relative;
-    
-
-}
-.cover .container{
-    position: absolute;
-    top: 5px;
-    left: 97px;
-}
-.cover .container p{
-    position: absolute;
-    right: 20px;
+/* Variables */
+:root {
+  --black50: rgba(0, 0, 0, 0.5);
+  --black-primary: #1e1e1e;
+  --gray-primary: #727272;
+  --white: #fff;
+  --blue: #0e5598;
 }
 
-.container h1{
-    margin-top: 16px;
-    font-size: 30px;
+/* Poppins font import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", system-ui;
+  font-style: normal;
 }
-.contain{
-    color: #a7a2a2;
-    
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
-
-/* }
-.cover .input{
-    position: absolute;
-    left: 100px;
-} */
-
-/* .cont {
-    text-align: ;
-} */
-/* .email{
-    margin-right:1px;
-} */
-#email{
-margin-top: 8px;
-margin-left: -1.5em;
-width: 126%;
-border: 2px solid #353232;
-border-radius: 4px;
-padding: 5px;
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
-#password{
-margin-top: 8px;
-margin-left: -1.5em;    
-width: 126%;
-border: 2px solid #353232;
-border-radius: 4px;
-padding: 5px;
+.align-center {
+  align-items: center;
 }
-button{
-    margin-left: -1.5em;
- margin-top: 6px;   
-width: 133%;
-border: 2px solid #353232;
-border-radius: 4px;
-padding: 5px;
-background: #353232;
+.justify-center {
+  justify-content: center;
 }
-a{
-    text-decoration: none;
-    color: white;
+.align-end {
+  align-items: flex-end;
 }
-.cover #check{
-position: absolute;
-left:219px;
+.justify-between {
+  justify-content: space-between;
 }
-#check{
-    margin-top: 20px;
+.justify-end {
+  justify-content: flex-end;
 }
-.cover input[type="checkbox"]{
-    position: absolute;
-    left: 175px;
-    bottom: 35px;
+.container {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-input[type="checkbox"]{
- 
-    width: 40px;
-    height: 4vh;
-   
-   
+.content {
 }
-/* .cover #check{
-    position: absolute;
-    right: 200px;
-} */
-.cover .sign{
-    position: absolute;
-    left: 93px;
+.form {
+  border: 1px solid var(--black50);
+  border-radius: 10px;
+  height: 340px;
+  width: 340px;
+  box-sizing: border-box;
+  padding: 22px 20px;
 }
-.sign{
-   margin-top: 25px;
+.header {
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--black-primary);
 }
-.sign a{
-    color: dodgerblue;
+.subtitle {
+  color: var(--gray-primary);
+  font-size: 14px;
+  margin-top: -20px;
+}
+.label {
+  color: var(--black-primary);
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.input-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+.input {
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid var(--black-primary);
+  height: 36px;
+  width: 100%;
+  margin-top: 7px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  &::placeholder {
+    color: var(--black50);
+    font-weight: 400;
+  }
+}
+.btn {
+  background-color: var(--black-primary);
+  color: var(--white);
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  height: 36px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.12s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.bottom {
+  width: 100%;
+  box-sizing: border-box;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+.checkbox-label {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.register-row {
+  margin-top: 10px;
+}
+.register-label {
+  margin-right: 5px;
+  font-size: 14px;
+}
+.register {
+  font-size: 14px;
+  color: var(--blue);
+  font-weight: 500;
+  text-decoration: none;
 }
